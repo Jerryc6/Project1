@@ -1,0 +1,1297 @@
+*{
+    padding: 0;
+    margin: 0;
+    background: lightgrey;
+}
+
+.header-title{
+    width: auto;
+    height: 100px;
+    position: relative;
+    
+}
+
+.header-title h1{
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    margin-left: 200px;
+    width: 800px;
+    height: 50px;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.header-title p{
+    margin-top: 65px;
+    margin-left: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.field-apan{
+    width: auto;
+    height: 600px;
+    float: left;    
+    margin-left: 30px;
+}
+
+.first-box-content{
+    width: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.app-ref-no{
+    margin-top: 30px;
+    margin-left: 20px;
+    height: 100px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+}
+
+.app-ref-no input{
+    height: 40px;
+    width: 600px;
+    margin-top: 20px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    font-size:16px;
+    border-bottom: 1px solid black;
+}
+
+.app-ref-no ::placeholder{
+    font-style: italic;
+}
+
+.schoolYear-campus{
+    height: 100px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+}
+
+.schoolYear-campus input{
+    height: 40px;
+    width: 300px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    font-size:16px;
+    border-bottom: 1px solid black;
+}
+
+.schoolYear-campus ::placeholder{
+    font-style: italic;
+}
+
+.degree-choice p{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+}
+
+.surat{
+    height: 30px;
+    font-weight: bold;
+    width: 700px;
+    margin-left: auto;
+    float: left;
+    margin-right: auto;
+}
+
+.first-choice{
+    height: 20px;
+    font-size: 16px;
+    font-style: italic;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+}
+
+.degree-choice{
+    width: 700px;
+    height: 290px;
+    margin-top: 200px;
+}
+
+.degree-choice select{
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    font-size: 15px;
+    float: left;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    width: 600px;
+}
+
+.first-c{
+    height: 80px;
+    width: 500px;
+}
+
+.seconnd-choice{
+    margin-top: 20px;
+}
+
+.second-c{
+    height: 80px;
+    width: 500px;
+}
+
+.third-choice{
+    margin-top: 20px;
+}
+
+.knan-picture{
+    width: auto;
+    height: 500px;
+    float: right;
+    margin-right: 200px;
+}
+
+.hero{
+    width: auto;
+    height: 400px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .card{
+        width: 400;
+        padding: 20px;
+        border-radius: 15px;
+        border: 1px solid black;
+        background: green;
+    }
+
+    .card img{
+        width: 350px;
+        height: 230px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        display: flex;
+    }
+
+    .hero label{
+        width: 200px;
+        height: 50px;
+        background: yellow;
+        box-shadow: 0px 4px 10px rgba(0,0,0,.5);
+        cursor: pointer;
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 10px;
+    }
+
+    label p{
+        margin-top: 15px;
+        background: yellow;
+    }
+
+    .hero input{
+        display: none;
+    }
+
+
+/*******************************************************/
+    .second-boxx{
+        width: auto;
+        height: 600px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 40px;
+        border-radius: 10px;
+    }
+
+    .name-info{
+        height: 100px;
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .name-info input{
+        width:auto;
+        margin-left: 20px;
+        margin-right: 50px;
+        height: 40px;
+        margin-top: 20px;
+        outline: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+
+    .name-info ::placeholder{
+        font-style: italic;
+        padding-left: 10px;
+    }
+
+
+    .contact-info{
+        height: 80px;
+    }
+
+    .contact-info input{
+        height: 40px;
+        margin-left: 30px;
+        width: 300px;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-bottom: 1px solid black;
+        padding-left: 10px;
+    }
+
+    .info{
+        height: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        margin-left: 20px;
+        font-weight: bold;
+    }
+
+    .knanbirth{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -20px;
+    }
+
+    .dropdown-month{
+        width: 300px;
+        height: 90px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    .dropdown-month select{
+        width: 280px;
+        height: 50px;
+        outline: none;
+        font-size: medium;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+
+    .dropdown-day{
+        width: 110px;
+        height: 70px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .dropdown-day select{
+        width: 110px;
+        height: 50px;
+        outline: none;
+        font-size: medium;
+        font-family: Arial, Helvetica, sans-serif;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+
+    .dropdown-year{
+        width: 250px;
+        height: 70px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .dropdown-year select{
+        width: 110px;
+        height: 50px;
+        outline: none;
+        font-size: medium;
+        font-family: Arial, Helvetica, sans-serif;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid black;
+      }
+
+      .dropdown-sex{
+        width: 120px;
+        height: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2px;
+      }
+
+      .dropdown-sex select{
+        width: 100px;
+        height: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+        font-weight: bold;
+        outline:  none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        margin: auto;
+        border-bottom: 1px solid black;
+      }
+
+      .dropdown-sex option{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+        font-weight: bold;
+      }
+
+      .dropdown-status{
+        width: 140px;
+        height: 70px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .dropdown-status select{
+        width: 110px;
+        height: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+        font-weight: bold;
+        outline:  none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid black;
+      }
+
+      .inputtown{
+        width: 300px;
+        height: 70px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .inputtown input{
+        width: 290px;
+        height: 50px;
+        padding-left: 10px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        outline: none;
+        font-size: medium;
+        border-bottom: 1px solid black;
+      }
+
+      .inputtown ::placeholder{
+        font-style: italic;
+      }
+
+      .info-location{
+        height: 150px;
+      }
+
+      .info-location p{
+        height: 50px;
+        margin-left: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+
+      }
+
+      .info-location input{
+        height: 50px;
+        width: 250px;
+        margin-left: 20px;
+        outline: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid black;
+        padding-left: 10px;
+      }
+
+      .info-location ::placeholder{
+        font-style: italic;
+      }
+
+
+      .last-attended-record{
+        height: 90px;
+      }
+
+      .last-attended-record p{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 20px;
+        font-weight: bold;
+      }
+
+      .last-attended-record input{
+        width: 200px;
+        height: 50px;
+        margin-top: 20px;
+        margin-left: 30px;
+        padding-left: 10px;
+        outline: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+      }
+
+      .thirdBox{
+        width: auto;
+        height: 800px;
+        margin-left: 30px;
+        margin-right: 30px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        margin-top: 40px;
+        border-radius: 10px;
+        border: 1px solid lightgray;
+      }
+
+      .first-question{
+        width: auto;
+        margin-top: 20px;
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .dl{
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+
+      .firstt-question{
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+
+      .yes-no{
+        margin-left: 20px;
+        margin-top: 10px;
+      }
+
+      .text-area textarea{
+        width: 900px;
+        height: 200px;
+        margin-left: 20px;
+        margin-top: 10px;
+        padding-left: 8px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+      }
+
+      .text-area ::placeholder{
+        padding-left: 10px;
+      }
+
+      .second-question{
+        margin-left: 20px;
+        margin-top: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .sec-q{
+        width: auto;
+        margin-top: 20px;
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .text-area-sec textarea{
+        width: 900px ;
+        height: 200px;
+        padding-left: 8px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+      }
+
+      .third-question{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+        position: relative;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+      }
+
+      .sub{
+        width: 900px;
+        height: 50px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30px;
+        margin-right: 30px;
+        float: left;
+      }
+
+      .sub  button{
+        width: 400px;
+        background: darkgreen;
+        border-radius: 10px;
+        border: 1px solid black;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .sub :hover{
+        background: yellow;
+      }
+
+      footer{
+        width: auto;
+        height: 200px;
+        margin-top: 150px;
+      }
+
+
+
+
+      @media screen and (max-width:1300px) {
+        body{
+            display: block;
+        }
+
+        .header-title{
+            margin-left: auto;
+            margin-right: auto;
+            width: 1200px;
+            
+        }
+
+        .header-title h1{
+            font-style: italic;
+            width: 900px;
+        }
+
+        .first-box-content{
+            width: 1200px;
+            height: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .second-boxx{
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .last-attended-record{
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: medium;
+        }
+
+        .inputtown input{
+            margin-right: 30px;
+            width: 260px;
+            font-size: small;
+
+        }
+
+        .last-attended-record input{
+            width: 200px;
+            font-size: small;
+        }
+
+        .last-attended-record ::placeholder{
+            font-style: italic;
+        }
+
+        .dropdown-month select{
+            margin-left: 20px;
+            width: 200px;
+            font-size: small;
+        }
+
+        .dropdown-day select{
+            margin-left: -30px;
+            font-size: small;
+        }
+
+        .dropdown-year select{
+            font-size: small;
+        }
+
+        .dropdown-sex select{
+            font-size: small;
+        }
+
+        .dropdown-status select{
+            font-size: small;
+        }
+
+        .thirdBox{
+            width: 1200px;
+            height: 760px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .sub{
+            width: 900px;
+            height: 50px;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 30px;
+            margin-right: 30px;
+            float: left;
+          }
+    
+          .sub  button{
+            width: 400px;
+            background: darkgreen;
+            border-radius: 10px;
+            border: 1px solid black;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+          }
+    
+          .sub :hover{
+            background: yellow;
+          }
+
+        footer{
+            height: 300px;
+            margin-top: 60px;
+        }
+
+
+    }
+
+
+      @media screen and (max-width:1100px) {
+        body{
+            display: block;
+        }
+
+        .header-title{
+            width: 429px;
+            width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 130px;
+        }
+
+        .header-title h1{
+            font-style: italic;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .first-box-content{
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .field-apan{
+            width: 500px;
+        }
+
+        .app-ref-no input{
+            width: 400px;
+        }
+
+        .schoolYear-campus input{
+            width: 190px;
+        }
+
+        .first-c select{
+            width: 400px;
+            font-size: smaller;
+        }
+
+        .first-c option{
+            width: 200px;
+            font-size: smaller;
+        }
+
+        .first-choice{
+            font-size: medium;
+            font-weight: bold;
+            font-style: normal;
+            margin-top: 20px;
+        }
+
+        .second-c select{
+            width: 400px;
+            font-size: smaller;
+        }
+
+        .second-c option{
+            width: 200px;
+            font-size: smaller;
+        }
+
+        .seconnd-choice{
+            font-size: medium;
+            font-weight: bold;
+            font-style: normal;
+            margin-top: 20px;
+        }
+
+        .third-c select{
+            width: 400px;
+            font-size: smaller;
+        }
+
+        .third-c option{
+            width: 200px;
+            font-size: smaller;
+        }
+
+        .third-choice{
+            font-size: medium;
+            font-weight: bold;
+            font-style: normal;
+            margin-top: 20px;
+        }
+
+        .second-boxx{
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+        }
+
+        .name-info{
+            margin-left: auto;
+            margin-right: auto;
+            width: 1000px;
+            border-radius: 10px;
+        }
+
+        .contact-info{
+            width: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .student-info{
+            position: relative;
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .knanbirth{
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .dropdown-month{
+            width: 170px;
+        }
+
+        .dropdown-month select{
+            width: 130px;
+            font-size: small;
+            margin-left: 20px;
+        }
+
+        .dropdown-day{
+            margin-left: 12px;
+            width: 100px;    
+        }
+
+        .dropdown-day select{
+            width: 90px;
+            margin-left: 5px;
+            font-size: small;
+
+        }
+
+        .dropdown-year{
+            width: 150px;
+            margin-left: 20px;
+        }
+
+        .dropdown-year select{
+            font-size: small;
+            width: 100px;
+            margin-left: -7px;
+        }
+
+        .dropdown-sex{
+            margin-left: -10px;
+        }
+
+        .dropdown-sex select{
+            width: 70px;
+            margin-left: 10px;
+        }
+
+        .thirdBox{
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .last-attended-record{
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .sub{
+            width: 700px;
+            margin-left: 20px;
+            margin-right: 30px;
+        }
+
+        .sub button{
+            width: 300px;
+        }
+        
+    }
+
+
+
+
+/******************** MOBILE VIEW *****************************************/
+    @media screen and (max-width: 500px){
+
+        body{
+            display: block;
+        }
+
+        .header-title{
+            width: 429px;
+        }
+
+        .header-title h1{
+            font-size: small;
+            float: left;
+            font-weight: bold;
+            width: 300px;
+            height: 20px;
+            margin-left: 40px;
+        }
+
+        .header-title p{
+            font-size: smaller;
+            margin-left: 40px;
+            margin-top: 40px;
+            height: 20px;
+            width: 300px;
+        }
+
+        .first-box-content{
+            width: 400px;
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 800px;
+        }
+
+        .field-apan{
+            width: 380px;
+            height: 530px;
+            margin-left: 10px;
+        }
+
+        .surat{
+            font-size: small;
+
+        }
+
+        .first-choice{
+            font-size: small;
+            font-style: normal;
+            font-weight: bold;
+        }
+
+        .app-ref-no{
+            width: 50px;
+            height: 70px;
+            margin-top: 10px;
+        }
+
+        .app-ref-no input{
+            width: 350px;
+            margin-top: 10px;
+            font-size: smaller;
+        }
+
+        .app-ref-no ::placeholder{
+            font-size: smaller;
+        }
+
+        .schoolYear-campus{
+            height: 50px;
+            width: 380px;
+        }
+
+        .schoolYear-campus input{
+            width: 175px;
+            font-size: smaller;
+        }
+
+        .schoolYear-campus ::placeholder{
+            font-size: smaller;
+        }
+
+        .degree-choice{
+            width: 260px;
+            margin-top: 150px;
+        }
+
+        .first-c{
+            width: 360px;
+        }
+
+        .first-choice{
+            width: 360px;
+        }
+
+        .second-c{
+            width: 360px;
+        
+        }
+
+        .degree-choice select{
+            width: 300px;
+        }
+
+        .degree-choice p{
+            width: 360px;
+        }
+
+        .first-c select{
+            width: 360px;
+            font-size: smaller;
+        }
+
+        .first-c option{
+            font-size: smaller;
+        }
+
+        .seconnd-choice{
+            font-size: smaller;
+            font-weight: bold;
+            margin-top: 30px;
+            width: 360px;
+        }
+
+        .second-c select{
+            width: 360px;
+            font-size: smaller;
+        }
+
+        .second-c option{
+            font-size: smaller;
+        }
+
+        .third-choice {
+            font-size: smaller;
+            font-weight: bold;  
+            width: 10px;
+            margin-top: 30px;
+            width: 360px;
+        }
+
+        
+        .third-c select{
+            width: 360px;
+            font-size: smaller;   
+        }
+
+        .third-c option{
+            font-size: smaller;
+        }
+
+
+        .knan-picture{
+            height: 200px;
+            float: left;
+            margin-left: -370px;
+            margin-top: 500px;
+            width: 350px;
+            margin-top: 480px;
+        }
+
+        .hero{
+            width: 350px;
+            height: 200px;
+            margin-top: 60px;
+        }
+
+        .card{
+            width: 300px;
+            height: 200px;
+        }
+
+        .card img{
+            width: 230px;
+            height: 160px;
+        }
+
+        .hero label{
+            width: 260px;
+            height: 30px;
+            margin-top: -15px;
+            font-size: smaller;
+        }
+
+        .hero p{
+            margin-top: 7px;
+        }
+
+        .second-boxx{
+            width: 400px;
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 1400px;
+        }
+
+        .name-info{
+            width: 400px;
+            height: 200px;
+        }
+        
+        .name-info input{
+            width:  340px;
+            font-size: smaller;
+            padding-left: 10px;
+        }
+
+        .contact-info{
+            width: 400px;
+            height: 130px;
+        }
+
+        .contact-info input{
+            width:  340px;
+            margin-left: 20px;
+            padding-left: 10px;
+        }
+
+        .contact-info ::placeholder{
+            padding-left: 10px;
+            font-style: italic;
+        }
+
+        .info{
+            font-size: small;
+            margin-left: 30px;
+        }
+
+        .student-info{
+            position: relative;
+            width: 400px;
+            height: 550px;
+        }
+
+        .knanbirth{
+            position: relative;
+            width: 400px;
+            height: 500px;
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+
+        .dropdown-month{
+            margin-left: 20px;
+            height: 60px;
+            width: 350px;
+            margin-top: -10px;
+        }
+
+        .dropdown-month select{
+            margin-left: -20px;
+            width: 290px;
+        }
+
+        .dropdown-day{
+            margin-left: 20px;
+            width: 350px;
+            margin-top: -170px;
+        }
+
+        .dropdown-day select{
+            width: 290px;
+            margin-left: -20px;
+        }
+
+        .dropdown-year{
+            width: 350px;
+            margin-left: 20px;
+            margin-top: -188px;
+        }
+
+        .dropdown-year select{
+            width: 290px;
+            margin-left: -20px;
+        }
+
+        .dropdown-sex{
+            margin-left: 20px;
+            width: 350px;
+            margin-top: -110px;
+        }
+
+        .dropdown-sex select{
+            width: 290px;
+            margin-left: -20px;
+        }
+
+        .dropdown-status{
+            margin-left: 20px;
+            width: 350px;
+            margin-top: -150px;
+        }
+
+        .dropdown-status select{
+            width: 290px;
+            margin-left: -20px;
+        }
+
+        .inputtown{
+            width: 350px;
+            margin-top: -140px;
+        }
+
+        .inputtown input{
+            width: 290px;
+        }
+
+        .inputtown ::placeholder{
+            font-size: 12px;
+        }
+
+        .info-location{
+            height: 230px;
+            margin-top: -1px;
+        }
+
+        .info-location p{
+            font-size: small;
+            margin-left: 30px;
+            width: 200px;
+        }
+
+        .info-location input{
+            width: 340px;
+            font-size: small;
+        }
+
+        .info-location ::placeholder{
+            font-size: 12px;
+        }
+
+        .last-attended-record{
+            width: 400px;
+            height: 220px;
+        }
+
+        .last-attended-record p {
+            font-size: small;
+            margin-left: 30px;
+        }
+
+        .last-attended-record input{
+            height: 30px;
+            font-size: 12px;
+            width: 340px;
+            margin-left: 20px;
+        }
+
+        .thirdBox{
+            width: 400px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .thirdBox p {
+            font-size: small;
+        }
+
+        .thirdBox label{
+            font-size: small;
+        }
+
+        .thirdBox textarea{
+            width: 350px;
+            height: 150px;
+        }
+
+        .thirdBox ::placeholder{
+            font-size: 12px;
+        }
+
+        .sub{
+            width: 350px;
+            border: none;
+            margin-top: 40px;
+        }
+
+        .sub button{
+            width: 150px;
+            
+        }
+
+        .sub :hover{
+            background: darkgreen;
+        }
+
+        footer{
+            height: 100px;
+        }
+        
+
+
+    }
+
+   

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      *{
+        margin: 0%;
+        padding: 0%;
+      }
+
+      .sideBar{
+        width: 300px;
+        height: 100vh;
+        background: darkgreen;
+        position: relative;
+        float: left;
+      }
+
+      .side-content{
+        width: auto;
+        height: 400px;
+        margin-top: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        justify-content: center;
+        text-align: center;
+      }
+     
+      .side-content button{
+        width: 280px;
+        margin-top: auto;
+        margin-right: auto;
+        height: 50px;
+        margin-top: 20px;
+        border-radius: 10px;
+      }
+
+      .center-content{
+        width: auto;
+        height: 100vh;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .jpanel{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        height: 100vh;
+        overflow-y: scroll;
+      }
+
+      .first-box{
+        width: 960px;
+        height: 320px;
+        background: white;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        min-width: 1080px;
+        border-radius: 20px;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 10px rgba(0,0,0,.5); 
+      }
+
+      .abm{
+        width: 240px;
+        height: 100px;
+        background: red;
+        float: right;
+        margin-right: 820px;
+        margin-top: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0,0,0,.5);
+      }
+
+     .tvl{
+      width: 240px;
+      height: 100px;
+      background: blue;
+      margin-top: -100px;
+      float: right;
+      margin-right: 560px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(153, 59, 59, 0.5);
+     }
+
+     .humms{
+      width: 240px;
+      height: 100px;
+      background: darkgreen;
+      float: right;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,.5);
+      margin-right: 299px;
+      margin-top: -100px;
+     }
+
+     .stem{
+      width: 240px;
+      height: 100px;
+      background: orange;
+      float: right;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,.5);
+      margin-top: -100px;
+      margin-right: 40px;
+     }
+      
+    .gas{ 
+      width: 240px;
+      height: 100px;
+      background: gray;
+      float: right;
+      border-radius: 10px;
+      margin-right: 820px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,.5);
+      margin-top: 17px;
+    }
+
+    .als{
+      width: 240px;
+      height: 100px;
+      background: chartreuse;
+      float: right;
+      border-radius: 10px;
+      margin-right: 560px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,.5);
+      margin-top: -100px;
+    }
+
+    .old-curiculomn{
+      width: 240px;
+      height: 240px;
+      background: gray;
+      float: right;
+      border-radius: 10px;
+      margin-right: 299px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,.5);
+    }
+
+    .sec-box{
+        width: 960px;
+        height: 300px;
+        background: white;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 20px;
+        min-width: 1080px;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 10px rgba(0,0,0,.5);
+        margin-top: 50px;
+      }
+
+      .sideBarChart{
+        width: 450px;
+        height: 250px;
+        background-color: crimson;
+        margin-left:50px;
+        float: left;
+        border-radius: 10px;
+        margin-top: 20px;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 10px rgba(0,0,0,.5);
+      }
+
+      .rightBarChart{
+        width: 450px;
+        height: 250px;
+        background-color: aqua;
+        float: right;
+        border-radius: 10px;
+        margin-top: 20px;
+        margin-right: 50px;
+        box-shadow: 0px 4px 10px rgba(0,0,0,.5);
+        box-sizing: border-box;
+      }
+
+      .third-box{
+        width: 960px;
+        height: 320px;
+        background: white;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        min-width: 1080px;
+        border-radius: 20px;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 10px rgba(0,0,0,.5);
+      }
+
+      .drop-yearly{
+        width: 150px;
+        height: 20px;
+        margin-left: 30px;
+        margin-top: 20px;
+        float: left;
+      }
+
+      .kada-year{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+        width: 150px;
+      }
+
+      .kada-year select{
+        width: 140px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+        font-weight: 100;
+        outline: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+      }
+
+      .drop-curse{
+        width: 650px;
+        height: 30px;
+        float: right;
+        margin-top: 20px;
+        margin-right: 50px;
+
+      }
+
+      .drop-curse select{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+        font-weight: 100;
+        outline: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid black;
+        width: 630px;
+      }
+
+      .kanan-table{
+        width: 930px;
+        overflow-y: scroll;
+        height: 230px;
+        border: 1px solid black;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      header {
+          height: 80px;
+          width: auto;
+          margin-left: auto;
+          margin-right: auto;
+          position: relative;
+          border-bottom: 1px solid black;
+          
+        }
+
+        .my-Dash{
+          float: left;
+          font-family: Arial, Helvetica, sans-serif;
+          margin-top: 20px;
+          margin-left: 80px;
+          
+          
+        }
+
+        .my-search-engene{
+          float: right;
+          width: 100px;
+          margin-right: 500px;
+          margin-top: 28px;
+
+        }
+
+        .my-search-engene input{
+          height: 30px;
+          width: 260px;
+          outline: none;
+          padding-left: 10px  ;
+        }
+
+        .my-search-engene ::placeholder{
+          font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+
+  <header>
+
+    <div class="title-dashboard">
+      <div class="my-Dash">
+        <h1>MY DASHBOARD</h1>
+      </div>
+
+
+      <div class="my-search-engene">
+        <input type="" placeholder="Search">
+      </div>
+    </div>
+
+  </header>
+
+  <!--------------------------------------------------->
+   <nav class="sideBar">
+    <div class="side-content">
+      <button >Button</button>
+      <button >Button</button>
+      <button >Button</button>
+      <a href="LoginA.html"><button >Logout</button></a>
+    </div>
+   </nav>
+   <!--------------------------------------------------->
+
+  <div class="center-content">
+    <div class="jpanel">
+      <div class="first-box">
+
+        <div class="drop-yearly">
+          <form action="dataadmin.php" class="kada-year">
+            <select name="dropyearly" id="" class="tuig">
+              <option value="">2024-2025</option>
+              <option value="">2025-2026</option>
+              <option value="">2026-2027</option>
+              <option value="">2027-2028</option>
+              <option value="">2028-2029</option>
+              <option value="">2029-2030</option>
+              <option value="">2030-2031</option>
+              <option value="">2031-2032</option>
+              <option value="">2032-2033</option>
+              <option value="">2033-2034</option>
+              <option value="">2034-2035</option>
+              <option value="">2035-2036</option>
+            </select>
+          </form>
+        </div>
+
+        <div class="drop-curse">
+          <form action="dataadmin.php" class="kada-curse">
+            <select name="dropcurse" id="" class="crs">
+              <option value="">Ph.D. in Educational Management</option>
+              <option value="">M.A. in Teaching Vocational Education
+                (MATVE)
+                 Major: Agricultural Arts</option>
+              <option value="">M.A. in Management (MAM)</option>
+              <option value="">M.A. in Education (MAEd)
+                Majors: Educational Management
+                Mathematics
+                Physics
+               </option>
+              <option value="">Bachelor of Science in Agriculture
+              </option>
+              <option value="">Bachelor of Science in Agribusiness</option>
+              <option value="">Bachelor of Science in Environmental
+                Science
+                </option>
+              <option value="">Bachelor of Science in Computer
+                Engineering
+                </option>
+              <option value="">Bachelor of Science in Agricultural &
+                Biosystems Engineering
+                </option>
+              <option value="">Bachelor of Science in Computer
+                Science
+                </option>
+              <option value="">Bachelor of Science in Information
+                Technology
+                </option>
+              <option value="">Bachelor of Early Childhood Education</option>
+              <option value="">Bachelor of Elementary Education</option>
+              <option value="">Bachelor of Secondary Education
+                Majors: English
+                Mathematics
+                Science
+               </option>
+              <option value="">Bachelor of Technology & Livelihood
+                Education
+                 Majors: ICT & Home Economics</option>
+            </select>
+          </form>
+        </div>
+
+        <div class="abm">
+          <p>ABM</p>
+          <p>Total</p>
+        </div>
+
+        <div class="tvl">
+          <p>tvl</p>
+          <p>total :</p>
+        </div>
+
+        <div class="humms">
+          <p>humms</p>
+          <p>total :</p>
+        </div>
+
+        <div class="stem">
+          <p>stem</p>
+          <p>total :</p>
+        </div>
+
+        <div class="gas">
+          <p>gas</p>
+          <p>total :</p>
+        </div>
+
+        <div class="als">
+          <p>als</p>
+          <p>total :</p>
+        </div>
+
+        <div class="old-curiculomn">
+          <p>old curriculomn</p>
+          <p>total :</p>
+        </div>
+      </div>
+
+      <div class="sec-box">
+        <div class="sideBarChart">
+          <p>Bar Chart</p>
+          <p>makikita kon pera an nag enroll kada tuig</p>
+        </div>
+
+        <div class="rightBarChart">
+          <p>Pie Chart</p>
+          <p>makikita kon pera an nag enroll htun nga course kada tuig</p>
+        </div>
+      </div>
+
+      <div class="third-box">
+        <!-------Table Nganhi--->
+
+        <div class="drop-yearly">
+          <form action="dataadmin.php" class="kada-year">
+            <select name="kadayear" id="" class="tuig">
+              <option value="">2024-2025</option>
+              <option value="">2025-2026</option>
+              <option value="">2026-2027</option>
+              <option value="">2027-2028</option>
+              <option value="">2028-2029</option>
+              <option value="">2029-2030</option>
+              <option value="">2030-2031</option>
+              <option value="">2031-2032</option>
+              <option value="">2032-2033</option>
+              <option value="">2033-2034</option>
+              <option value="">2034-2035</option>
+              <option value="">2035-2036</option>
+            </select>
+          </form>
+        </div>
+
+        <div class="drop-curse">
+          <form action="" class="kada-curse">
+            <select name="" id="" class="crs">
+              <option value="">Ph.D. in Educational Management</option>
+              <option value="">M.A. in Teaching Vocational Education
+                (MATVE)
+                 Major: Agricultural Arts</option>
+              <option value="">M.A. in Management (MAM)</option>
+              <option value="">M.A. in Education (MAEd)
+                Majors: Educational Management
+                Mathematics
+                Physics
+               </option>
+              <option value="">Bachelor of Science in Agriculture
+              </option>
+              <option value="">Bachelor of Science in Agribusiness</option>
+              <option value="">Bachelor of Science in Environmental
+                Science
+                </option>
+              <option value="">Bachelor of Science in Computer
+                Engineering
+                </option>
+              <option value="">Bachelor of Science in Agricultural &
+                Biosystems Engineering
+                </option>
+              <option value="">Bachelor of Science in Computer
+                Science
+                </option>
+              <option value="">Bachelor of Science in Information
+                Technology
+                </option>
+              <option value="">Bachelor of Early Childhood Education</option>
+              <option value="">Bachelor of Elementary Education</option>
+              <option value="">Bachelor of Secondary Education
+                Majors: English
+                Mathematics
+                Science
+               </option>
+              <option value="">Bachelor of Technology & Livelihood
+                Education
+                 Majors: ICT & Home Economics</option>
+            </select>
+          </form>
+        </div>
+
+
+        <div class="kanan-table">
+          <table bgcolor = "black" width = "910">
+            <tr bgcolor="gray">
+              <th width = "910">EASTERN SAMAR STATE UNIVERSITY STUDENT'S FRESH MEN</th>
+              
+            </tr>
+  
+            <tr bgcolor ="white">
+              <td width="910">Student Name</td>
+            </tr>
+            <tr bgcolor ="white">
+              <td width="910">Student Name</td>
+            </tr>
+            <tr bgcolor ="white">
+              <td width="910">Student Name</td>
+            </tr>
+            <tr bgcolor ="white">
+              <td width="910">Student Name</td>
+            </tr>
+            <tr bgcolor ="white">
+              <td width="910">Student Name</td>
+            </tr>
+            <tr bgcolor ="white">
+              <td width="910">Student Name</td>
+            </tr>
+            <tr bgcolor ="white">
+              <td width="910">Student Name</td>
+            </tr>
+            <tr bgcolor ="white">
+              <td width="910">Student Name</td>
+            </tr>
+            <tr bgcolor ="white">
+              <td width="910">Student Name</td>
+            </tr>
+            <tr bgcolor ="white">
+              <td width="910">Student Name</td>
+            </tr>
+            <tr bgcolor ="white">
+              <td width="910">Student Name</td>
+            </tr>
+            <tr bgcolor ="white">
+              <td width="910">Student Name</td>
+            </tr>
+            <tr bgcolor ="white">
+              <td width="910">Student Name</td>
+            </tr>
+            <tr bgcolor ="white">
+              <td width="910">Student Name</td>
+            </tr>
+            <tr bgcolor ="white">
+              <td width="910">Student Name</td>
+            </tr>
+            <tr bgcolor ="white">
+              <td width="910">Student Name</td>
+            </tr>
+            <tr bgcolor ="white">
+              <td width="910">Student Name</td>
+            </tr>
+            <tr bgcolor ="white">
+              <td width="910">Student Name</td>
+            </tr>
+            <tr bgcolor ="white">
+              <td width="910">Student Name</td>
+            </tr>
+            <tr bgcolor ="white">
+              <td width="910">Student Name</td>
+            </tr>
+            <tr bgcolor ="white">
+              <td width="910">Student Name</td>
+            </tr>
+            <tr bgcolor ="white">
+              <td width="910">Student Name</td>
+            </tr>
+            <tr bgcolor ="white">
+              <td width="910">Student Name</td>
+            </tr>
+            <tr bgcolor ="white">
+              <td width="910">Student Name</td>
+            </tr>
+            <tr bgcolor ="white">
+              <td width="910">Student Name</td>
+            </tr>
+            <tr bgcolor ="white">
+              <td width="910">Student Name</td>
+            </tr>
+            <tr bgcolor ="white">
+              <td width="910">Student Name</td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+
+    </div>
+   </div>
+
+   
+
+
+    
+   </div>
+</body>
+</html>

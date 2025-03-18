@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>WELCOME</title>
+</head>
+<body>
+
+<header>
+        <nav>
+            <div class="navbar">
+                <div class="icon">
+                    <h2 class="logo">BHMS</h2>
+                </div>
+        
+                <div class="menu">
+                    <ul>
+                        <li><a href="#home" class="active">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#gallery">GALLERY</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+</header>
+
+    
+<section id="home">
+    <div class="main">
+        <div class="content">
+            <h1>Boarding House<br><span>Managament</span><br>System</h1>
+                <button class="cn"><a href="#">JOIN US</a></button>
+    
+                <div class="form">
+                    <h2>Login Here</h2>
+                        <form action="updatee.php" method="post" autocomplete="off">
+                            <input type="text" name="user" id="user" placeholder="Username" required>
+                            <input type="password" name="pass" id="pass" placeholder="Password" required>
+                            <button class="btn" type="submit" name="updateid">Login</button>
+                        </form>
+                    <p class="link">Dont have an account?<br>
+                    <a href="create.php">Sign up</a> here</p> 
+                    <p class="liw">Log in with</p>
+                </div>
+        </div>
+    </div>
+
+</section>
+<section id="about">
+    <div class="main-body">
+        <div class="developers">
+            <div class="wrapper">
+                <h2>ABOUT US</h2>
+                
+                <div class="members">
+
+                    <div class="group1">
+                        <div class="team-mem">
+                            <a href="https://www.facebook.com/Ch.balbuena.18"><img src="back/lyndon.jpeg"></a>
+                            <h4><a href="https://www.facebook.com/Ch.balbuena.18">Lyndon Abunales</a></h4>
+                            <p>Leader</p>
+                        </div>
+            
+                        <div class="team-mem">
+                            <a href="https://www.facebook.com/ruthann.abudaii"><img src="back/hanna.jpeg"></a>
+                            <h4><a href="https://www.facebook.com/ruthann.abudaii">Hannah Mhel Dadulla</a></h4>
+                            <p>Member</p>
+                        </div>
+            
+                        <div class="team-mem">
+                            <a href="https://www.facebook.com/sugar.padel"><img src="back/reymart.jpeg"></a>
+                            <h4><a href="https://www.facebook.com/sugar.padel">Reymart Prongo</a></h4>
+                            <p>Member</p>
+                        </div>
+            
+                        <div class="team-mem">
+                            <a href="https://www.facebook.com/fatima.beroja"><img src="back/genra.jpeg" alt=""></a>
+                            <h4><a href="https://www.facebook.com/fatima.beroja">Jenra Macasinag Yutila</a></h4>
+                            <p>Member</p>
+                        </div>
+                    </div>
+
+                    <div class="group2">
+                        <div class="team-mem">
+                            <a href="https://www.facebook.com/Ch.balbuena.18"><img src="back/alysa.jpeg"></a>
+                            <h4><a href="https://www.facebook.com/Ch.balbuena.18">Alysaa Odivilas Lacido</a></h4>
+                            <p>Member</p>
+                        </div>
+            
+                        <div class="team-mem">
+                            <a href="https://www.facebook.com/ruthann.abudaii"><img src="back/rowena.jpeg   "></a>
+                            <h4><a href="https://www.facebook.com/ruthann.abudaii">Rowena Quijano</a></h4>
+                            <p>Member</p>
+                        </div>
+            
+                        <div class="team-mem">
+                            <a href="https://www.facebook.com/sugar.padel"><img src="back/michelle.jpeg"></a>
+                            <h4><a href="https://www.facebook.com/sugar.padel">Michelle Escalante</a></h4>
+                            <p>Member</p>
+                        </div>
+            
+                        <div class="team-mem">
+                            <a href="https://www.facebook.com/fatima.beroja"><img src="back/ma.erlenda.jpeg" alt=""></a>
+                            <h4><a href="https://www.facebook.com/fatima.beroja">Ma. Erlenda Delantar</a></h4>
+                            <p>Member</p>
+                        </div>
+                    </div>
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<section id="gallery" class="conta-iner">
+    
+    <div class="slide-wrappper">
+        <h1 class="ti">GALLERY</h1>
+        <div class="slider">
+            
+
+            <img id="pic1" src="back/pic1.jpeg" alt=""/>
+            <img id="pic2" src="back/pic2.jpeg" alt=""/>
+            <img id="pic3" src="back/pic3.jpeg" alt=""/>
+            <img id="pic4" src="back/pic4.jpeg" alt=""/>
+            <img id="pic5" src="back/pic5.jpeg" alt=""/>
+            <img id="pic6" src="back/pic6.jpeg" alt=""/>
+            <img id="pic7" src="back/pic7.jpeg" alt=""/>
+            <img id="pic8" src="back/pic8.jpeg" alt=""/>
+            <img id="pic9" src="back/pic9.jpeg" alt=""/>
+            <img id="pic10" src="back/pic10.jpeg" alt=""/>
+        </div>
+    </div>
+</section>
+<section id="contact" class="con">
+    <footer class="footer">
+        &copy; copyright @ 2024 by <span>GROUP 6</span> | all rights reserved!
+     </footer>
+</section>
+<script>
+    let sections = document.querySelectorAll('section');
+    let icon = document.querySelectorAll('header nav');
+
+    window.onscroll = () =>{
+        sections.forEach(sec =>{
+            let top = window.scrollY;
+            let offset = sec.offsetTop;
+            let height = sec.offsetHeight;
+            let id = sec.getAttribute('id');
+
+            if (top >= offset && top < offset + height) {
+                icon.forEach(links =>{
+                    links.classList.remove('active');
+                    document.querySelector('header nav [href*='+ id +']').classList.add('active');
+                });
+            }
+        });
+    }
+</script>   
+</body>
+</html>

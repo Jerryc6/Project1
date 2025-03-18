@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+
+    <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="header">
+   
+        <section class="flex">
+     
+           <a href="home.html" class="logo">  </a>
+     
+           <form action="search.html" method="post" class="search-form">
+              <input type="text" name="search_box" required placeholder="  " maxlength="100">
+              <button type="submit" class="fas fa-search"></button>
+           </form>
+     
+           <div class="icons">
+              <div id="menu-btn" class="fas fa-bars"></div>
+              <div id="search-btn" class="fas fa-search"></div>
+            
+           </div>
+     
+           
+     
+        </section>
+     
+     </header>   
+     
+     <div class="side-bar">
+     
+        <div id="close-btn">
+           <i class="fas fa-times"></i>
+        </div>
+     
+        <div class="profile">
+           <h3 class="name">BHMS</h3>
+        </div>
+     
+        <nav class="navbar">
+            <a href="home.html"><i class="fas fa-home"></i><span>DASHBOARD</span></a>
+            <a href="tenants.html"><i class="fa-solid fa-user-tie"></i><span>TENANTS</span></a>
+            <a href="room.html"><i class="fa-solid fa-door-open"></i><span>ROOM MANAGEMENT</span></a>
+            <a href="bed.html"><i class="fas fa-bed"></i><span>BED MANAGEMENT</span></a>
+            <a href="billrates.html"><i class="fa-solid fa-plug"></i><span>BILL RATES</span></a>
+            <a href="payments.html"><i class="fa-solid fa-dollar-sign"></i><span>PAYMENTS</span></a>
+            <a href="suggestion.html"><i class="fa-solid fa-envelope"></i><span>SUGGESTION</span></a>
+           
+        </nav>
+     
+     </div>
+     
+     
+     <section class="courses">
+      <h1 class="heading">Bill Rates</h1>
+      <div class="container">
+         <div class="tbl_container">
+             
+             <table class="tbl">
+                 <thead>
+                     <tr>
+                         <th>Bills</th>
+                         <th>Rate</th>
+                         <th colspan="2">Action</th>
+                     </tr>
+                 </thead>
+ 
+                 <tbody>
+                     <tr>
+                         <td>ELECTRICITY</td>
+                         <td>100/KWh</td>
+                         <td>
+                             <button class="btn_edit"><i class="fa fa-pencil"></i></button>
+                         </td>
+                         <td>
+                             <button class="btn_delete"><i class="fa fa-trash"></i></button>
+                         </td>
+                     </tr>
+                     <tr>
+                        <td>Water</td>
+                        <td>100/KWh</td>
+                        <td>
+                            <button class="btn_edit"><i class="fa fa-pencil"></i></button>
+                        </td>
+                        <td>
+                            <button class="btn_delete"><i class="fa fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wifi</td>
+                        <td>1500.00</td>
+                        <td>
+                            <button class="btn_edit"><i class="fa fa-pencil"></i></button>
+                        </td>
+                        <td>
+                            <button class="btn_delete"><i class="fa fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>10,000.00</td>
+                        <td>
+                            <button class="btn_edit"><i class="fa fa-pencil"></i></button>
+                        </td>
+                        <td>
+                            <button class="btn_delete"><i class="fa fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Maintenance</td>
+                        <td>5,000.00</td>
+                        <td>
+                            <button class="btn_edit"><i class="fa fa-pencil"></i></button>
+                        </td>
+                        <td>
+                            <button class="btn_delete"><i class="fa fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                 </tbody>
+             </table>
+         </div>
+     </div>
+      
+     </section>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     <footer class="footer">
+     
+        &copy; copyright @ 2024 by <span>GROUP 6</span> | all rights reserved!
+     
+     </footer>
+     
+     <!-- custom js file link  -->
+     <script src="js/script.js"></script>
+     
+        
+     </body>
+     </html>
+</body>
+</html>

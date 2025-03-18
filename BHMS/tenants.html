@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css">
+    <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+
+   <style>
+    #myDIV {
+      width: 790px;
+      padding: 35px 0;
+      height: 300px;
+      background-color: white;
+      display: none;
+      position: fixed;
+      top: 250px;
+      left: 340px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      box-shadow: 7px 7px 10px black;
+      animation-duration: 10s;
+    }
+    </style>
+</head>
+<body>
+    <div id="myDIV">   
+        <form class="boy" action="connection_tenants.php" name="myForm" onsubmit="validateForm()" method="post" autocomplete="off">
+            <div class="questions">
+                <input type="text" placeholder="Complete Name" id="full_name" name="full_name" required value="" onfocus="this.value=''">
+                <input type="text" placeholder="Contact Number" id="phone_number" name="phone_number" required value="" onfocus="this.value=''">
+                <input type="text" placeholder="Address" id="add_ress" name="add_ress" required value="" onfocus="this.value=''">
+                <input type="text" placeholder="Room Number" id="room_number" name="room_number" required value="" onfocus="this.value=''">
+                <input type="text" placeholder="Bed Number" id="bed_number" name="bed_number" required value="" onfocus="this.value=''">
+                <input type="text" placeholder="Status" id="sta_tus" name="sta_tus" required value="" onfocus="this.value=''">
+                <input type="text" placeholder="Expected Amount" id="expected_amount" name="expected_amount" required value="" onfocus="this.value=''">
+                <input type="text" placeholder="Paid Amount" id="paid_amount" name="paid_amount" required value="" onfocus="this.value=''">
+                <input type="text" placeholder="Picture" id="pic_ture" name="pic_ture" required value="" onfocus="this.value=''">
+            </div>
+        </form>
+        <button onclick="Myfunction()" type="submit" class="btnn">submit</button>
+     </div>
+
+     <script>
+        function Myfunction() {
+            var f = document.forms["myForm"]["full_name","phone_number","add_ress","room_number","bed_number","sta_tus","expected_amount","paid_amount","pic_ture"].value;
+         if (f == "") {
+          Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Please filled up all"
+          });
+          return false;
+         }else{
+           Swal.fire({
+           title: "Good job!",
+           icon: "success"
+          });
+          var x = document.getElementById("myDIV");
+          if (x.style.display === "block") {
+              x.style.display = "none";
+            }else {
+                x.style.display = "block";
+            }
+        }
+        return false;
+      }
+      </script>
+
+
+<header class="header">
+        <section class="flex">
+           <a href="home.html" class="logo">  </a>
+     
+           <form action="search.html" method="post" class="search-form">
+              <input type="text" name="search_box" required placeholder="  " maxlength="100">
+              <button type="submit" class="fas fa-search"></button>
+           </form>
+     
+           <div class="icons">
+              <div id="menu-btn" class="fas fa-bars"></div>
+              <div id="search-btn" class="fas fa-search"></div>
+           </div>
+        </section>
+     </header>   
+     
+     <div class="side-bar">
+        <div id="close-btn">
+           <i class="fas fa-times"></i>
+        </div>
+     
+        <div class="profile">
+           <h3 class="name">BHMS</h3>
+        </div>
+        <nav class="navbar">
+            <a href="home.html"><i class="fas fa-home"></i><span>DASHBOARD</span></a>
+            <a href="tenants.html"><i class="fa-solid fa-user-tie"></i><span>TENANTS</span></a>
+            <a href="room.html"><i class="fa-solid fa-door-open"></i><span>ROOM MANAGEMENT</span></a>
+            <a href="bed.html"><i class="fas fa-bed"></i><span>BED MANAGEMENT</span></a>
+            <a href="billrates.html"><i class="fa-solid fa-plug"></i><span>BILL RATES</span></a>
+            <a href="payments.html"><i class="fa-solid fa-dollar-sign"></i><span>PAYMENTS</span></a>
+            <a href="suggestion.html"><i class="fa-solid fa-envelope"></i><span>SUGGESTION</span></a>
+        </nav>
+     </div>
+     
+     <section class="courses">
+      <h1 class="heading">TENANTS</h1>
+      <button type="reset" onclick="myFunction()">+Add New</button>
+      <div class="container">
+         <div class="tbl_container">
+             <table class="tbl">
+
+                 <thead>
+                     <tr>
+                         <th>Profile</th>
+                         <th>Complete Name</th>
+                         <th>Contact Number</th>
+                         <th>Address</th>
+                         <th colspan="2">Action</th>
+                     </tr>
+                 </thead>
+ 
+                 <tbody>     
+                     <tr>
+                         <td> img </td>
+                         <td>Reymart Prongo</td>
+                         <td>09898982342</td>
+                         <td>Brgy 7. Giporlos E. Samar</td>
+                         <td>
+                             <button class="btn_edit"><i class="fa fa-pencil"></i></button>
+                         </td>
+                         <td>
+                             <button class="btn_delete"><i class="fa fa-trash"></i></button>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td> img </td>
+                         <td>Reymart Prongo</td>
+                         <td>09898982342</td>
+                         <td>Brgy 7. Giporlos E. Samar</td>
+                         <td>
+                             <button class="btn_edit"><i class="fa fa-pencil"></i></button>
+                         </td>
+                         <td>
+                             <button class="btn_delete"><i class="fa fa-trash"></i></button>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td> img </td>
+                         <td>Reymart Prongo</td>
+                         <td>09898982342</td>
+                         <td>Brgy 7. Giporlos E. Samar</td>
+                         <td>
+                             <button class="btn_edit"><i class="fa fa-pencil"></i></button>
+                         </td>
+                         <td>
+                             <button class="btn_delete"><i class="fa fa-trash"></i></button>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td> img </td>
+                         <td>Reymart Prongo</td>
+                         <td>09898982342</td>
+                         <td>Brgy 7. Giporlos E. Samar</td>
+                         <td>
+                             <button class="btn_edit"><i class="fa fa-pencil"></i></button>
+                         </td>
+                         <td>
+                             <button class="btn_delete"><i class="fa fa-trash"></i></button>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td> img </td>
+                         <td>Reymart Prongo</td>
+                         <td>09898982342</td>
+                         <td>Brgy 7. Giporlos E. Samar</td>
+                         <td>
+                             <button class="btn_edit"><i class="fa fa-pencil"></i></button>
+                         </td>
+                         <td>
+                             <button class="btn_delete"><i class="fa fa-trash"></i></button>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td> img </td>
+                         <td>Reymart Prongo</td>
+                         <td>09898982342</td>
+                         <td>Brgy 7. Giporlos E. Samar</td>
+                         <td>
+                             <button class="btn_edit"><i class="fa fa-pencil"></i></button>
+                         </td>
+                         <td>
+                             <button class="btn_delete"><i class="fa fa-trash"></i></button>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td> img </td>
+                         <td>Reymart Prongo</td>
+                         <td>09898982342</td>
+                         <td>Brgy 7. Giporlos E. Samar</td>
+                         <td>
+                             <button class="btn_edit"><i class="fa fa-pencil"></i></button>
+                         </td>
+                         <td>
+                             <button class="btn_delete"><i class="fa fa-trash"></i></button>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td> img </td>
+                         <td>Reymart Prongo</td>
+                         <td>09898982342</td>
+                         <td>Brgy 7. Giporlos E. Samar</td>
+                         <td>
+                             <button class="btn_edit"><i class="fa fa-pencil"></i></button>
+                         </td>
+                         <td>
+                             <button class="btn_delete"><i class="fa fa-trash"></i></button>
+                         </td>
+                     </tr>
+                     <tr>
+                        <td> img </td>
+                        <td>Reymart Prongo</td>
+                        <td>09898982342</td>
+                        <td>Brgy 7. Giporlos E. Samar</td>
+                        <td>
+                            <button class="btn_edit"><i class="fa fa-pencil"></i></button>
+                        </td>
+                        <td>
+                            <button class="btn_delete"><i class="fa fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                     <td> img </td>
+                     <td>Reymart Prongo</td>
+                     <td>09898982342</td>
+                     <td>Brgy 7. Giporlos E. Samar</td>
+                     <td>
+                         <button class="btn_edit"><i class="fa fa-pencil"></i></button>
+                     </td>
+                     <td>
+                         <button class="btn_delete"><i class="fa fa-trash"></i></button>
+                     </td>
+                 </tr>
+                 <tr>
+                  <td> img </td>
+                  <td>Reymart Prongo</td>
+                  <td>09898982342</td>
+                  <td>Brgy 7. Giporlos E. Samar</td>
+                  <td>
+                      <button class="btn_edit"><i class="fa fa-pencil"></i></button>
+                  </td>
+                  <td>
+                      <button class="btn_delete"><i class="fa fa-trash"></i></button>
+                  </td>
+              </tr>
+                </tbody>
+             </table>
+         </div>
+     </div>  
+     </section>
+      
+     <script>
+     function myFunction() {
+       var x = document.getElementById("myDIV");
+       if (x.style.display === "block") {
+         x.style.display = "none";
+       } else {
+         x.style.display = "block";
+       }
+     }
+
+     function myfunction(){
+        var y = document.getElementById("myDIV");
+        if (y.style.display === "none") {
+            y.style.display = "block";
+
+        }else{
+            y.style.display = "none"
+        }
+     }
+     </script>
+     
+     <footer class="footer">
+        &copy; copyright @ 2024 by <span>GROUP 6</span> | all rights reserved!
+     </footer>
+     <!-- custom js file link  -->
+     <script src="js/script.js"></script>
+    </body>
+     </html>
+</body>
+</html>

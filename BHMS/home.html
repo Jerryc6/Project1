@@ -1,0 +1,196 @@
+<?php
+// Get username and password from POST request
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $user = $_POST['user'];
+    $pass = $_POST['pass'];
+
+
+    $servername = "localhost"; // Usually localhost
+    $username = "user"; // Your database username
+    $password = ""; // Your database password
+    $dbname = "bhms"; // Your database name
+
+
+    $con = new mysqli($servername, $username, $password, $dbname);
+
+    if ($con->connect_error) {
+        die("Connection failed: " . $con->connect_error);   
+    }
+
+    $query = "SELECT * FROM log_in WHERE user= '$user' AND pass= '$pass' ";
+    $result = $con->query($query);
+
+    if ($result->num_rows == 1 ) {
+        # code...
+        header("Location: Dashhboard.php");
+        
+    }else {
+        # code...
+        echo "<script> console.log('Errro');</script>";
+        exit();
+    }
+
+    $con->close();
+}
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/login.css">
+    <title>HOME</title>
+</head>
+<body>
+
+<header>
+        <nav>
+            <div class="navbar">
+                <div class="icon">
+                    <h2 class="logo">BHMS</h2>
+                </div>
+        
+                <div class="menu">
+                    <ul>
+                        <li><a href="#home" class="active">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#gallery">GALLERY</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+</header>
+
+    
+<section id="home">
+    <div class="main">
+        <div class="content">
+            <h1>Boarding House<br><span>Managament</span><br>System</h1>
+                <button class="cn"><a href="#">JOIN US</a></button>
+    
+                <div class="form">
+                    <h2>Login Here</h2>
+                        <form action="updatee.php" method="post" autocomplete="off">
+                            <input type="text" name="user" id="user" placeholder="Username" required>
+                            <input type="password" name="pass" id="pass" placeholder="Password" required>
+                            <button class="btn" type="submit" name="updateid">Login</button>
+                        </form>
+                    <p class="link">Dont have an account?<br>
+                    <a href="create.php">Sign up</a> here</p> 
+                    <p class="liw">Log in with</p>
+                </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="about">
+    <div class="main-body" style="background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url('CSS/pic/pic8.jpeg');">
+        <div class="developers">
+            <div class="wrapper">
+                <h2>ABOUT US</h2>
+                <div class="members">
+                    <div class="group1">
+                        <div class="team-mem">
+                            <img src="CSS/pic/lyndon.jpeg">
+                            <h4>Lyndon Abunales</h4>
+                            <p>Leader</p>
+                        </div>
+                        <div class="team-mem">
+                            <img src="CSS/pic/hanna.jpeg">
+                            <h4>Hannah Mhel Dadulla</h4>
+                            <p>Member</p>
+                        </div>
+                        <div class="team-mem">
+                            <img src="CSS/pic/reymart.jpeg">
+                            <h4>Reymart Prongo</a>
+                            <p>Member</p>
+                        </div>
+                        <div class="team-mem">
+                            <img src="CSS/pic/genra.jpeg" alt="">
+                            <h4>Jenra Macasinag Yutila</h4>
+                            <p>Member</p>
+                        </div>
+                    </div>
+
+                    <div class="group2">
+                        <div class="team-mem">
+                            <img src="CSS/pic/alysa.jpeg">
+                            <h4>Alysaa Odivilas Lacido</h4>
+                            <p>Member</p>
+                        </div>          
+                        <div class="team-mem">
+                            <img src="CSS/pic/rowena.jpeg   ">
+                            <h4>Rowena Quijano</h4>
+                            <p>Member</p>
+                        </div>  
+                        <div class="team-mem">
+                            <img src="CSS/pic/michelle.jpeg">
+                            <h4>Michelle Escalante</h4>
+                            <p>Member</p>
+                        </div>
+                        <div class="team-mem">
+                            <img src="CSS/pic/ma.erlenda.jpeg" alt="">
+                            <h4>Ma. Erlenda Delantar</h4>
+                            <p>Member</p>
+                        </div>
+                    </div>
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="gallery" class="conta-iner">
+    <div class="slide-wrappper" style="background: url('CSS/pic/Hero-Boarding.jpg');">
+        <h1 class="ti">GALLERY</h1>
+        <div class="slider">
+            <img id="pic1" src="CSS/pic/pic1.jpeg" alt=""/>
+            <img id="pic2" src="CSS/pic/pic2.jpeg" alt=""/>
+            <img id="pic3" src="CSS/pic/pic3.jpeg" alt=""/>
+            <img id="pic5" src="CSS/pic/pic5.jpeg" alt=""/>
+            <img id="pic6" src="CSS/pic/pic6.jpeg" alt=""/>
+            <img id="pic7" src="CSS/pic/pic7.jpeg" alt=""/>
+            <img id="pic8" src="CSS/pic/pic8.jpeg" alt=""/>
+            <img id="pic9" src="CSS/pic/pic9.jpeg" alt=""/>
+            <img id="pic10" src="CSS/pic/pic10.jpeg" alt=""/>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="con">
+    <footer class="footer">
+        Contact us: 09324234234 <span>LyndonAbunales32@gmail.com</span> | all rights reserved!
+        
+     </footer>
+</section>
+
+<script>
+    let sections = document.querySelectorAll('section');
+    let icon = document.querySelectorAll('header nav');
+
+    window.onscroll = () =>{
+        sections.forEach(sec =>{
+            let top = window.scrollY;
+            let offset = sec.offsetTop;
+            let height = sec.offsetHeight;
+            let id = sec.getAttribute('id');
+
+            if (top >= offset && top < offset + height) {
+                icon.forEach(links =>{
+                    links.classList.remove('active');
+                    document.querySelector('header nav [href*='+ id +']').classList.add('active');
+                });
+            }
+        });
+    }
+</script>   
+</body>
+</html>
+
+
